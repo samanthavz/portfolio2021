@@ -4,20 +4,39 @@
   margin: 0;
   padding: 0; 
 }
+
 html {
   scroll-behavior: smooth;
  }
+
 body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
  }
 
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Neucha', cursive;
+  font-size: 2em;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+}
+
 /* landingsscreen */
 body main section:nth-of-type(1) {
   height: 100vh;
   width: 100vw;
-  background-color: red;
   overflow: hidden;
 }
 
@@ -29,7 +48,6 @@ body main section div:nth-of-type(1) {
     left: 50%;
     margin-top: -100px;
     margin-left: -35vw;
-    background-color: blue;
     overflow: hidden;
 }
 
@@ -52,6 +70,36 @@ section:nth-of-type(2) {
   height: 100vh;
   width: 100vw;
   background-color: royalblue;
+  display: flex;
+  flex-wrap: wrap;
+  
+  padding: 20vh 10vw 0 10vw;
+}
+
+section:nth-of-type(2) span {
+  width: 40em;
+  justify-content: center;
+  padding: 0 5vw;
+  flex-grow: 1;
+}
+
+section:nth-of-type(2) h2 {
+  font-size: 3em;
+  padding-bottom: 1em;
+}
+
+section:nth-of-type(2) p {
+  font-size: 1.05em;
+  padding-bottom: 1.5em;
+}
+
+section:nth-of-type(2) a {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+section:nth-of-type(2) img {
+  width: 30rem;
 }
 
 @keyframes flickerAnimation {
@@ -67,3 +115,6 @@ section:nth-of-type(2) {
 .aaa {
   transition: ease-in 2s;
 }
+
+/* classes */
+
